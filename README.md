@@ -1,6 +1,7 @@
 # Concept Web App UI
 
 To run locally execute `npm run dev`
+To run locally using mock execute `VITE_USE_MOCKS=true npm run dev`
 
 ## React Compiler
 
