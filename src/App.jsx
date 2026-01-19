@@ -106,7 +106,7 @@ function App() {
       }
 
       await login({
-        identifier: username,
+        email: username,
         password,
         rememberMe,
         client: clientMeta,

@@ -26,11 +26,12 @@ function Login({
           </p>
         </div>
         <label className="auth-field">
-          Username
+          {isSignUp ? 'Username' : 'Email'}
           <input
+            type={isSignUp ? 'text' : 'email'}
             value={username}
             onChange={(event) => onUsernameChange(event.target.value)}
-            placeholder="Enter your username"
+            placeholder={isSignUp ? 'Enter your username' : 'Enter your email'}
           />
         </label>
         <label className="auth-field">

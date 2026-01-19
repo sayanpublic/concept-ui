@@ -23,7 +23,7 @@ function Contacts({
           <input
             value={friendInput}
             onChange={(event) => onFriendInputChange(event.target.value)}
-            placeholder="Username or email"
+            placeholder="Email"
           />
         </label>
         <button type="submit" disabled={!friendInput || isAdding}>

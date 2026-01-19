@@ -1,7 +1,7 @@
-import { fetchJson } from './client'
+import { fetchJson, BASE_URL, CONTEXT_PATH } from './client'
 
-export const LOGIN_URL = '/api/login'
-export const REGISTER_URL = '/api/register'
+export const LOGIN_URL = `${BASE_URL}${CONTEXT_PATH}/login`
+export const REGISTER_URL = `${BASE_URL}${CONTEXT_PATH}/register`
 
 export async function login(payload) {
   return fetchJson(LOGIN_URL, {
